@@ -1,10 +1,6 @@
 <a href="https://github.com/yungweng">
-  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=yungweng&width=800&height=400" alt="yungweng" width="100%">
+  <img src="https://readme-typing-svg.demolab.com?lines=yungweng;Founder.+Perfectionist+who+ships.&font=Fira+Code&size=32&color=58A6FF&background=00000000&center=true&width=800&height=60&pause=1000" alt="yungweng" width="100%">
 </a>
-
-### Founder. Full-stack engineer. Perfectionist who ships.
-
-Building privacy-first tools for education. If I don't automate it, who will?
 
 ---
 
