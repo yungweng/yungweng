@@ -3,7 +3,3 @@
 </a>
 
 ---
-
-<a href="https://github.com/yungweng">
-  <img src="https://stats-svg.vercel.app/api/github-status?username=yungweng" alt="GitHub Stats" width="100%">
-</a>
