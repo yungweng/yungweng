@@ -1,55 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
-  <style>
-    @keyframes cursor-blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-    @keyframes reveal {
-      0% { width: 0; }
-      60% { width: 100%; }
-      100% { width: 100%; }
-    }
-    @keyframes fade-in {
-      0%, 50% { opacity: 0; }
-      80%, 100% { opacity: 1; }
-    }
-    .tagline-mask rect {
-      animation: reveal 3s steps(15) forwards;
-    }
-    .cursor {
-      animation: cursor-blink 0.8s step-end infinite;
-      animation-delay: 3s;
-    }
-    .cursor-slide {
-      animation: reveal 3s steps(15) forwards;
-    }
-    .subtitle {
-      animation: fade-in 4s ease forwards;
-    }
-  </style>
-
-  <defs>
-    <clipPath id="text-reveal">
-      <rect x="0" y="0" width="0" height="120" class="tagline-mask">
-        <animate attributeName="width" from="0" to="800" dur="2.5s" fill="freeze" calcMode="steps" keyTimes="0;1" values="0;800"/>
+      <rect x="211" y="34" width="3" height="42" fill="#58a6ff" opacity="1">
+          <set attributeName="x" to="236.2" begin="0.16s" fill="freeze" />
+          <set attributeName="x" to="261.4" begin="0.32s" fill="freeze" />
+          <set attributeName="x" to="286.6" begin="0.48s" fill="freeze" />
+          <set attributeName="x" to="311.8" begin="0.64s" fill="freeze" />
+          <set attributeName="x" to="337" begin="0.80s" fill="freeze" />
+          <set attributeName="x" to="362.2" begin="0.96s" fill="freeze" />
+          <set attributeName="x" to="387.4" begin="1.12s" fill="freeze" />
+          <set attributeName="x" to="412.6" begin="1.28s" fill="freeze" />
+          <set attributeName="x" to="437.8" begin="1.44s" fill="freeze" />
+          <set attributeName="x" to="463" begin="1.60s" fill="freeze" />
+          <set attributeName="x" to="488.2" begin="1.76s" fill="freeze" />
+          <set attributeName="x" to="513.4" begin="1.92s" fill="freeze" />
+          <set attributeName="x" to="538.6" begin="2.08s" fill="freeze" />
+          <set attributeName="x" to="563.8" begin="2.24s" fill="freeze" />
+          <set attributeName="x" to="589" begin="2.40s" fill="freeze" />
+          <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
       </rect>
-    </clipPath>
-  </defs>
 
-  <!-- Main tagline -->
-  <g clip-path="url(#text-reveal)">
-    <text x="400" y="55" text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#e6edf3">
-      Einfach machen.
-    </text>
-  </g>
 
-  <!-- Blinking cursor -->
-  <rect class="cursor" x="576" y="22" width="3" height="40" fill="#58a6ff">
-    <animate attributeName="x" from="400" to="576" dur="2.5s" fill="freeze" calcMode="steps" keyTimes="0;1" values="400;576"/>
-  </rect>
+      <g font-family="SF Mono, Fira Code, Cascadia Code, monospace" font-size="42" font-weight="bold" fill="#e6edf3">
+          <text x="211" y="70" visibility="hidden">E<set attributeName="visibility" to="visible" begin="0.16s" fill="freeze" /></text>
+          <text x="236.2" y="70" visibility="hidden">i<set attributeName="visibility" to="visible" begin="0.32s" fill="freeze" /></text>
+          <text x="261.4" y="70" visibility="hidden">n<set attributeName="visibility" to="visible" begin="0.48s" fill="freeze" /></text>
+          <text x="286.6" y="70" visibility="hidden">f<set attributeName="visibility" to="visible" begin="0.64s" fill="freeze" /></text>
+          <text x="311.8" y="70" visibility="hidden">a<set attributeName="visibility" to="visible" begin="0.80s" fill="freeze" /></text>
+          <text x="337" y="70" visibility="hidden">c<set attributeName="visibility" to="visible" begin="0.96s" fill="freeze" /></text>
+          <text x="362.2" y="70" visibility="hidden">h<set attributeName="visibility" to="visible" begin="1.12s" fill="freeze" /></text>
+          <text x="387.4" y="70" visibility="hidden"> <set attributeName="visibility" to="visible" begin="1.28s" fill="freeze" /></text>
+          <text x="412.6" y="70" visibility="hidden">m<set attributeName="visibility" to="visible" begin="1.44s" fill="freeze" /></text>
+          <text x="437.8" y="70" visibility="hidden">a<set attributeName="visibility" to="visible" begin="1.60s" fill="freeze" /></text>
+          <text x="463" y="70" visibility="hidden">c<set attributeName="visibility" to="visible" begin="1.76s" fill="freeze" /></text>
+          <text x="488.2" y="70" visibility="hidden">h<set attributeName="visibility" to="visible" begin="1.92s" fill="freeze" /></text>
+          <text x="513.4" y="70" visibility="hidden">e<set attributeName="visibility" to="visible" begin="2.08s" fill="freeze" /></text>
+          <text x="538.6" y="70" visibility="hidden">n<set attributeName="visibility" to="visible" begin="2.24s" fill="freeze" /></text>
+          <text x="563.8" y="70" visibility="hidden">.<set attributeName="visibility" to="visible" begin="2.40s" fill="freeze" /></text>
+      </g>
 
-  <!-- Subtitle -->
-  <text class="subtitle" x="400" y="95" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="16" fill="#8b949e" opacity="0">
-    yungweng
-  </text>
-</svg>
+
+      <text x="400" y="105" font-family="SF Mono, Fira Code, Cascadia Code, monospace" font-size="16" fill="#8b949e" text-anchor="middle" opacity="0">
+          yungweng
+          <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.6s" fill="freeze" />
+      </text>
+  </svg>
