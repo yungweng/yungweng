@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <style>
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes reveal {
+      0% { width: 0; }
+      60% { width: 100%; }
+      100% { width: 100%; }
+    }
+    @keyframes fade-in {
+      0%, 50% { opacity: 0; }
+      80%, 100% { opacity: 1; }
+    }
+    .tagline-mask rect {
+      animation: reveal 3s steps(15) forwards;
+    }
+    .cursor {
+      animation: cursor-blink 0.8s step-end infinite;
+      animation-delay: 3s;
+    }
+    .cursor-slide {
+      animation: reveal 3s steps(15) forwards;
+    }
+    .subtitle {
+      animation: fade-in 4s ease forwards;
+    }
+  </style>
+
+  <defs>
+    <clipPath id="text-reveal">
+      <rect x="0" y="0" width="0" height="120" class="tagline-mask">
+        <animate attributeName="width" from="0" to="800" dur="2.5s" fill="freeze" calcMode="steps" keyTimes="0;1" values="0;800"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Main tagline -->
+  <g clip-path="url(#text-reveal)">
+    <text x="400" y="55" text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#e6edf3">
+      Einfach machen.
+    </text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect class="cursor" x="576" y="22" width="3" height="40" fill="#58a6ff">
+    <animate attributeName="x" from="400" to="576" dur="2.5s" fill="freeze" calcMode="steps" keyTimes="0;1" values="400;576"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <text class="subtitle" x="400" y="95" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="16" fill="#8b949e" opacity="0">
+    yungweng
+  </text>
+</svg>
