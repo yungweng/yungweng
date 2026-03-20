@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="./assets/tagline.svg" alt="Einfach machen." width="800">
+  <img src="./assets/lettergrid.svg" alt="Einfach machen." width="800">
 </p>
