@@ -252,7 +252,7 @@ const svgH = gridH + PADDING * 2;
 const svgParts: string[] = [];
 
 svgParts.push(
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${svgW} ${svgH}" width="${svgW * 2}" height="${svgH * 2}">`,
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${svgW} ${svgH}" width="${svgW}" height="${svgH}">`,
 );
 
 // ── Defs: star and shadow tile symbols ──────────────────────────
